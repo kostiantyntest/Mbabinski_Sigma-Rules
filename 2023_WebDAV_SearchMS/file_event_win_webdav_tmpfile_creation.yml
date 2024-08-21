@@ -18,14 +18,10 @@ detection:
     selection_1:
         TargetFilename|contains: 'AppData\Local\Temp\TfsStore\Tfs_DAV'
     selection_2:
-        TargetFilename|endswith:
+        TargetFilename:
             - '.vbs'
             - '.ps1'
             - '.lnk'
-            - '.zip'
-            - '.ico'
-            - '.bat'
-            - '.js'
     condition: all of selection_*
 falsepositives:
     - Legitimate use of WebDAV in an environment
