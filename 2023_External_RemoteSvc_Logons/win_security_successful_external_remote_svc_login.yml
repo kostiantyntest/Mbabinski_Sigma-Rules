@@ -1,6 +1,6 @@
 title: External Remote Service Logon from Public IP
 id: 259a9cdf-c4dd-4fa2-b243-2269e5ab18a2
-status: experimental
+status: unsupported
 description: Detects successful logon from public IP address via RDP, SMB, etc. This can indicate a publicly-exposed RDP or SMB port.
 references:
     - https://www.inversecos.com/2020/04/successful-4624-anonymous-logons-to.html
