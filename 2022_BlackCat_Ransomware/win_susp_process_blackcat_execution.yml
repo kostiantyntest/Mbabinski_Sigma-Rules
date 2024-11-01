@@ -1,7 +1,7 @@
 title: Suspicious Command Line Indicating BlackCat Execution
 id: df69c374-327e-4146-acff-4a961bb1b755
 status: experimental
-description: Detects process execution with the --access-token flag accompanied by a 64-character alphanumeric string in the space-delimited command-line arguments..
+description: Detects
 references:
     - https://www.microsoft.com/en-us/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
 author: Micah Babinski
@@ -16,7 +16,6 @@ logsource:
 detection:
     selection:
         CommandLine|contains: '--access-token'
-        CommandLine|re: '^.*\s{1}[a-zA-Z0-9]{64}\s{1}.*$'
     condition: selection
 falsepositives:
     - Unknown
