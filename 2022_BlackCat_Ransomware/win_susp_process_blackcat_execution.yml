@@ -15,7 +15,7 @@ logsource:
     product: windows
 detection:
     selection:
-        CommandLine|contains: '--access-token'
+        CommandLine: '--access-token'
     condition: selection
 falsepositives:
     - Unknown
