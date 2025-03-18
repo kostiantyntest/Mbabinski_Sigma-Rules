@@ -17,8 +17,6 @@ logsource:
 detection:
     selection:
         EventType: SetValue
-        TargetObject: 'HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters\MaxMpxCt'
-        Details: 'DWORD (0x0000ffff)'
     condition: selection
 falsepositives:
     - Unknown
